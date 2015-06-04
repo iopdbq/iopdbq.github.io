@@ -91,22 +91,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Markdown:文本解释型语言">Markdown:文本解释型语言</h1><p>2#Basic usages：<br>3#（一）标题<br>4#(a) Setext形式</p>
-<h1 id="最高阶标题">最高阶标题    </h1><h2 id="第二阶标题">第二阶标题</h2><h4 id="(b)_atx形式">(b) atx形式</h4><h1 id="一级">一级</h1><h2 id="二级">二级</h2><h3 id="三级">三级</h3><p>……<br>n# n级</p>
-<p>3#（二）引用</p>
-<blockquote>
+        <h1 id="Markdown:文本解释型语言">Markdown:文本解释型语言</h1><h2 id="Basic_usages：">Basic usages：</h2><h3 id="（一）标题">（一）标题</h3><h4 id="(a)_Setext形式">(a) Setext形式</h4><h1 id="最高阶标题">最高阶标题    </h1><h2 id="第二阶标题">第二阶标题</h2><h4 id="(b)_atx形式">(b) atx形式</h4><h1 id="一级">一级</h1><h2 id="二级">二级</h2><h3 id="三级">三级</h3><p>……<br>n# n级</p>
+<h3 id="（二）引用">（二）引用</h3><blockquote>
 <p>引用内容</p>
 </blockquote>
-<p>3#（三）文字样式<br>(1) <em>斜体</em><br>(2) <strong>粗体</strong><br>(3) <strong>粗<em>斜体</em>中</strong><br>(4) <em>斜<strong>粗体</strong>中</em></p>
-<p>3#（四）列表<br>4#(a) 无序<br><strong>+长</strong><br><strong>+宽</strong><br><strong>+高</strong><br><em>or</em><br><strong>-中</strong><br><strong>-美</strong><br><strong>-俄</strong><br>（注：-,+效果一样）<br>4#(b) 有序<br><strong>1. 中</strong><br><strong>2. 美</strong><br><strong>3. 俄</strong><br>4#(c) 混合<br><strong>1.天</strong><br><strong>-长</strong><br><strong>2.地</strong><br><strong>-宽</strong><br><strong>3.人</strong><br><strong>-高</strong></p>
-<p>3#（五）代码格式化<br>(1) 标记代码区段：tags<code>&lt;code&gt;&amp;mdash,&amp;#8212&lt;/code&gt;</code><br>(2) 已格式化区块：首行缩进一个tab<br>    \<blockquote><br>        \<p>For Example\</p><br>    \</blockquote><br>（注：`=\<code>(inline代码);tab=\<pre>（代码区块））</pre></code></p>
-<p>3#（六）链接<br>4#(a) 行内<br>这是我的md博客链接<a href="http://iopdbq.github.io" title="title（可选属性）" target="_blank" rel="external">iopdbq.github.io</a><br>4#(b) 参考<br>我的博客[iopdbq][1]（为链接指定一个名称，在其它地方（[1]）定义）<br>[1] <a href="http://iopdbq.github.io" target="_blank" rel="external">http://iopdbq.github.io</a> “iopdbq” </p>
-<p>3#（七）图片<br>4#(a) 行内<br><img src="url" alt="alt_text" title="title（可选属性）"><br>4#(b) 参考<br>![alt_text][id],预先定义 [id]:url “可选title”</p>
+<h3 id="（三）文字样式">（三）文字样式</h3><p>(1) <em>斜体</em><br>(2) <strong>粗体</strong><br>(3) <strong>粗<em>斜体</em>中</strong><br>(4) <em>斜<strong>粗体</strong>中</em></p>
+<h3 id="（四）列表">（四）列表</h3><h4 id="(a)_无序">(a) 无序</h4><p><strong>+长</strong><br><strong>+宽</strong><br><strong>+高</strong><br><em>or</em><br><strong>-中</strong><br><strong>-美</strong><br><strong>-俄</strong><br>（注：-,+效果一样）</p>
+<h4 id="(b)_有序">(b) 有序</h4><p><strong>1. 中</strong><br><strong>2. 美</strong><br><strong>3. 俄</strong></p>
+<h4 id="(c)_混合">(c) 混合</h4><p><strong>1.天</strong><br><strong>-长</strong><br><strong>2.地</strong><br><strong>-宽</strong><br><strong>3.人</strong><br><strong>-高</strong></p>
+<h3 id="（五）代码格式化">（五）代码格式化</h3><p>(1) 标记代码区段：tags<code>&lt;code&gt;&amp;mdash,&amp;#8212&lt;/code&gt;</code><br>(2) 已格式化区块：首行缩进一个tab<br>    (define backtick <code>)
+    (define (`` </code><code><code>``)
+        (inline</code><blockcode><code>))
+    &lt;b
+（注：</code>=<code>(inline代码)`;tab=<pre>（代码区块））</pre></code></blockcode></code></p>
+<h3 id="（六）链接">（六）链接</h3><h4 id="(a)_行内">(a) 行内</h4><p>这是我的md博客链接<a href="http://iopdbq.github.io" title="title（可选属性）" target="_blank" rel="external">iopdbq.github.io</a></p>
+<h4 id="(b)_参考">(b) 参考</h4><p>我的博客[iopdbq][1]（为链接指定一个名称，在其它地方（[1]）定义）<br>[1] <a href="http://iopdbq.github.io" target="_blank" rel="external">http://iopdbq.github.io</a> “iopdbq” </p>
+<h3 id="（七）图片">（七）图片</h3><h4 id="(a)_行内-1">(a) 行内</h4><p><img src="url" alt="alt_text" title="title（可选属性）"></p>
+<h4 id="(b)_参考-1">(b) 参考</h4><p>![alt_text][id],预先定义 [id]:url “可选title”</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/06/03/md初试-md/" data-id="ciahmvvif00015kpj0kse4lif" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/06/03/md初试-md/" data-id="ciahqzs9s0001lspjzja0bqx1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/usage/">usage</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/标记语法/">标记语法</a></li></ul>
@@ -153,7 +159,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/06/03/hello-world/" data-id="ciahmvvh100005kpj95c2atnm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/06/03/hello-world/" data-id="ciahqzs8n0000lspjazvgra83" class="article-share-link">Share</a>
       
       
     </footer>
