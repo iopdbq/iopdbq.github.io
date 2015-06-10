@@ -102,29 +102,32 @@
 <span class="variable">$git</span> commit -m <span class="string">"message"</span>    <span class="id">#commit</span> to <span class="function"><span class="title">local-db</span><span class="params">(HEAD)</span></span>
 <span class="variable">$git</span> status
 <span class="variable">$git</span> log                    <span class="id">#commit</span> log
-</code></pre><p><strong>注意：if出现</strong></p>
+</code></pre><p><strong>注意：如果出现</strong></p>
 <blockquote>
-<p>warning: LF will be replaced by CRLF in <filename><br>原因：回车(CR, ASCII 13, \r) ，换行(LF, ASCII 10, \n)<br>在Windows中广泛使用CRLF（回车换行）标识一行的结束<br>在Linux/UNIX系统中只有LF（换行符）</filename></p>
+<p>warning: LF will be replaced by CRLF in filename&gt;<br>原因：回车(CR, ASCII 13, \r) ，换行(LF, ASCII 10, \n)<br>在Windows中广泛使用CRLF（回车换行）标识一行的结束<br>在Linux/UNIX系统中只有LF（换行符）</p>
 </blockquote>
 <ul>
-<li><p><strong>解决办法</strong><br>  $rm -rf .git                               #delte .git files</p>
-<p>  $git config —global core.autocrlf false  #disable autocrlf</p>
-<p>  $git init                                  #reinit ~ repo</p>
+<li><strong>解决办法</strong><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$rm</span> -rf .git 							  <span class="comment">#delte .git files</span></span><br><span class="line"><span class="variable">$git</span> config --global core.autocrlf <span class="literal">false</span>  <span class="comment">#disable autocrlf</span></span><br><span class="line"><span class="variable">$git</span> init								  <span class="comment">#reinit ~ repo</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="(3)continue">(3)continue</h2><ul>
 <li><strong>go to</strong><br><strong>(2)commit to local-db</strong> </li>
 </ul>
 <h2 id="(4)tips">(4)tips</h2><ul>
-<li><strong>gitk: built-in GUI</strong></li>
-<li><strong>undo last commit</strong><br>  $git commit -m ‘cc’<br>  $git add forgoten_file<br>  $git commit —amend                    #modify last commit</li>
-<li><strong>recovery a file (history version)</strong><br>  $git log filename                    #get history version num<br>  $git reset num</li>
+<li><p><strong>gitk: built-in GUI</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$gitk</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>undo last commit</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$git</span> commit -m <span class="string">'cc'</span></span><br><span class="line"><span class="variable">$git</span> add forgoten_file</span><br><span class="line"><span class="variable">$git</span> commit --amend					<span class="comment">#modify last commit</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>recovery a file (history version)</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$git</span> <span class="built_in">log</span> filename					<span class="comment">#get history version num</span></span><br><span class="line"><span class="variable">$git</span> reset num</span><br></pre></td></tr></table></figure></li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/06/09/git-tips/" data-id="ciapja1270000v4pjew738l68" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/06/09/git-tips/" data-id="ciapjbaw60000lopjvvtclu07" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bash/">bash</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/note/">note</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tips/">tips</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/usage/">usage</a></li></ul>
@@ -246,7 +249,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/06/03/md初试-md/" data-id="ciapja13c000dv4pjfjseuo8n" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/06/03/md初试-md/" data-id="ciapjbaxf000dlopjxent6b6r" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/usage/">usage</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/标记语法/">标记语法</a></li></ul>
@@ -293,7 +296,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/06/03/hello-world/" data-id="ciapja13u000lv4pjku4offhq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/06/03/hello-world/" data-id="ciapjbaxn000llopj36ppdz65" class="article-share-link">Share</a>
       
       
     </footer>
